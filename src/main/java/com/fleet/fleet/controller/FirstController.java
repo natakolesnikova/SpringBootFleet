@@ -12,6 +12,6 @@ public class FirstController {
     @RequestMapping("/home.html")
     public ModelAndView firstPage() {
         Date dateAndTime = new Date();
-        return new ModelAndView("/WEB-INF/jsp/welcome.jsp", "dateAndTime", dateAndTime);
+        return new ModelAndView("welcome", "dateAndTime", dateAndTime);
     }
 }
